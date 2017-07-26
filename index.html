@@ -1,0 +1,30 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <h1>Hello Vue</h1>
+
+        <!-- Simple bind -->
+        <div id="app">
+            {{ message }}
+        </div>
+
+        <!-- loop example -->
+        <div id="app-4">
+            <ol>
+                <li v-for="todo in todos">
+                    {{ todo.text }}
+                </li>
+            </ol>
+        </div>
+
+        <div id="app-5">
+            <p>{{ message }}</p>
+            <button v-on:click="reverseMessage">Reverse Message</button>
+        </div>
+
+        <script src="js/lib/vue.js"></script>
+        <script src="js/vueskol.js"></script>
+    </body>
+</html>
