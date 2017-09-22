@@ -30,4 +30,24 @@ var app5 = new Vue({
         console.log("Hello sir");
     }
   }
-})
+});
+
+var appHooks = new Vue({
+  el: '#app-hooks',
+  data: {
+    message: 'hello'
+  },
+  created: function() {
+    console.log("Created callback");
+  },
+  mounted: function() {
+    console.log("Mounted callback");
+    this.message = "changed";
+  },
+  updated: function() {
+    console.log("Updated callback");
+  },
+  destroyed: function() {
+    console.log("Destroyed callback");
+  }
+});
