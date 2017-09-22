@@ -28,6 +28,15 @@
             <p>Hooks example {{message}}</p>
         </div>
 
+        <div id="app-conditional">
+            <p v-if="ok"> I am Ok</p>
+            <p v-else> I am NOT OK</p>
+            <p v-if="ok"> I am another Ok</p>
+        </div>
+
+        <div id="app-custom">
+            <welcome></welcome>
+        </div>
         <script src="js/lib/vue.js"></script>
         <script src="js/vueskol.js"></script>
     </body>

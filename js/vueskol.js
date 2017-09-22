@@ -51,3 +51,18 @@ var appHooks = new Vue({
     console.log("Destroyed callback");
   }
 });
+
+var appHooks = new Vue({
+  el: '#app-conditional',
+  data: {
+    ok: true
+  }
+});
+
+Vue.component('welcome', {
+  template: '<div>Welcome to Vue world!</div>'
+});
+
+var appCustom = new Vue({
+  el: '#app-custom'
+});
